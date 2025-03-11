@@ -1,3 +1,81 @@
+# LTVision: Customer Lifetime Value Analysis Tool
+
+A powerful tool for analyzing and predicting customer lifetime value (LTV) using cohort analysis and machine learning.
+
+## Features
+
+- Generate and analyze customer cohort data
+- Predict future customer lifetime value
+- Interactive visualization dashboard
+- Opportunity analysis for customer segments
+- Real-time data simulation and analysis
+
+## Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/LTVision.git
+cd LTVision
+```
+
+2. Create a virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+1. Start the Streamlit dashboard:
+```bash
+streamlit run streamlit_app.py
+```
+
+2. Use the dashboard:
+   - Adjust parameters in the sidebar:
+     - Number of customers
+     - Number of months
+     - Start date
+   - Click "Generate New Data" to simulate new customer data
+   - View different analyses in the tabs:
+     - Combined Matrix: Shows actual and predicted LTV
+     - Opportunity Analysis: Displays growth potential
+
+3. Interpret the visualizations:
+   - Values without blue borders: Actual cumulative LTV
+   - Values with blue borders: Predicted future LTV
+   - Green in opportunity analysis: Growth potential
+   - Segment analysis shows customer distribution and revenue
+
+## Project Structure
+
+- `streamlit_app.py`: Main dashboard application
+- `ltv_cohort_analysis.py`: Core analysis functions
+- `src/ltv_utils.py`: Data preparation utilities
+- `src/ltv_opportunity.py`: LTV prediction models
+
+## Requirements
+
+- Python 3.9+
+- Streamlit
+- Pandas
+- NumPy
+- Seaborn
+- Matplotlib
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
+
 <p align="center">
   <img src="./website/static/img/LTVision-logo.png" alt="logo" width="50%"/>
 </p>
@@ -12,7 +90,7 @@ Our vision is to lead the industry by building a community of pLTV practitioners
 
 Our first release - Module 1, is now available. It focuses on generating customer insights and estimating the potential pLTV opportunity size, enabling business decision-makers to evaluate the potential ROI of pLTV initiatives.
 
-LTVision is the first step on the pLTV journey. To learn more about Meta’s thought leadership on pLTV, please download our [whitepaper](https://github.com/facebookincubator/LTVision/raw/refs/heads/main/Predicting-LTV-Whitepaper.pdf#).
+LTVision is the first step on the pLTV journey. To learn more about Meta's thought leadership on pLTV, please download our [whitepaper](https://github.com/facebookincubator/LTVision/raw/refs/heads/main/Predicting-LTV-Whitepaper.pdf#).
 
 # Getting Started
 -------------------
